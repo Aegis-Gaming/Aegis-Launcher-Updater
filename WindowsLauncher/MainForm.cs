@@ -11,9 +11,9 @@ namespace AegisLauncher
     public partial class Form1 : Form
     {
         public string LauncherURL = "http://files.aegisgaming.org/Technic/";
-        private readonly string _launcherFile = Path.Combine(Program.AppPath, Program.LauncherFile);
-        private readonly string _launcherBackupFile = Path.Combine(Program.AppPath, Program.LauncherFile + ".bak");
-        private readonly string _launcherTempFile = Path.Combine(Program.AppPath, Program.LauncherFile + ".temp");
+        private readonly string _launcherFile = Path.Combine(Program.LauncherPath, Program.LauncherFile);
+        private readonly string _launcherBackupFile = Path.Combine(Program.LauncherPath, Program.LauncherFile + ".bak");
+        private readonly string _launcherTempFile = Path.Combine(Program.LauncherPath, Program.LauncherFile + ".temp");
         private int _hashDownloadCount, _launcherDownloadCount;
         private Exception error;
 

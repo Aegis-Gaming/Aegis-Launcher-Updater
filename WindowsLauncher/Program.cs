@@ -10,7 +10,8 @@ namespace AegisLauncher
 {
     static class Program
     {
-        public const string LauncherFile = "technic-launcher.jar";
+        public const string LauncherFile = "aegis-launcher.jar";
+        public static string LauncherPath;
         public static System.IO.StreamWriter log;
         public static string AppPath;
         public static TextWriter logger;
@@ -36,7 +37,7 @@ namespace AegisLauncher
                 MessageBox.Show("Cannot load: " + AppPath, "Error Starting launcher");
             }
 
-            var LauncherPath = Path.Combine(AppPath, ".techniclauncher");
+            LauncherPath = Path.Combine(AppPath, ".aegislauncher");
 
             try
             {
