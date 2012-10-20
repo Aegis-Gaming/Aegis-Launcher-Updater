@@ -6,11 +6,11 @@ using System.Security.Cryptography;
 using System.Text;
 using System.Windows.Forms;
 
-namespace TechnicLauncher
+namespace AegisLauncher
 {
     public partial class Form1 : Form
     {
-        public string LauncherURL = "http://206.217.207.1/Technic/";
+        public string LauncherURL = "http://files.aegisgaming.org/Technic/";
         private readonly string _launcherFile = Path.Combine(Program.AppPath, Program.LauncherFile);
         private readonly string _launcherBackupFile = Path.Combine(Program.AppPath, Program.LauncherFile + ".bak");
         private readonly string _launcherTempFile = Path.Combine(Program.AppPath, Program.LauncherFile + ".temp");
@@ -83,7 +83,7 @@ namespace TechnicLauncher
                 var wc = new WebClient();
                 wc.DownloadProgressChanged += DownloadProgressChanged;
                 wc.DownloadFileCompleted += DownloadFileCompleted;
-                wc.DownloadFileAsync(new Uri(String.Format("{0}technic-launcher.jar", LauncherURL)), _launcherTempFile);
+                wc.DownloadFileAsync(new Uri(String.Format("{0}aegis-launcher.jar", LauncherURL)), _launcherTempFile);
             }
             else
             {
@@ -152,7 +152,7 @@ namespace TechnicLauncher
             }
             catch (ApplicationException appException)
             {
-                MessageBox.Show("Unable to download launcher. Please check your internet connection by opening www.techniclauncher.net in your webbrowser.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Unable to download launcher. Please check your internet connection by opening www.aegisgaming.org in your webbrowser.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 Application.Exit();
                 return;
             }
@@ -169,7 +169,7 @@ namespace TechnicLauncher
             var lines = e.Result.Split(new[] {"\r\n", "\n"}, StringSplitOptions.None);
             foreach (var line in lines)
             {
-                if (!line.Contains("technic-launcher.jar")) continue;
+                if (!line.Contains("aegis-launcher.jar")) continue;
                 serverMD5 = line.Split('|')[0].ToLowerInvariant();
                 break;
             }

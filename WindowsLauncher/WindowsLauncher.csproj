@@ -8,7 +8,7 @@
     <ProjectGuid>{F8127643-FCB9-44D4-9009-9523CC1265B5}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>TechnicLauncher</RootNamespace>
+    <RootNamespace>AegisLauncher</RootNamespace>
     <AssemblyName>TechnicLauncher</AssemblyName>
     <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>

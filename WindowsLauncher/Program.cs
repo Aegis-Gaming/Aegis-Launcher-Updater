@@ -6,7 +6,7 @@ using System.Windows.Forms;
 using Microsoft.Win32;
 using System.Collections;
 
-namespace TechnicLauncher
+namespace AegisLauncher
 {
     static class Program
     {

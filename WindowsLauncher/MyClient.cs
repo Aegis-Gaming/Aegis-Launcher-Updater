@@ -1,7 +1,7 @@
 using System;
 using System.Net;
 
-namespace TechnicLauncher
+namespace AegisLauncher
 {
     class MyClient : WebClient
     {
