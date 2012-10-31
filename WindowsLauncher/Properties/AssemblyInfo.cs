@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Technic Launcher Updater")]
+[assembly: AssemblyTitle("Aegis Launcher Updater")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Technic")]
-[assembly: AssemblyProduct("Technic Launcher Updater")]
+[assembly: AssemblyCompany("AegisGaming")]
+[assembly: AssemblyProduct("Aegis Launcher Updater")]
 [assembly: AssemblyCopyright("")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
